@@ -1,4 +1,101 @@
-/* Add style for the header */
-.top-header {
-	display: flex;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+
+body {
+  margin: 0;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+
+.toolbar a {
+  text-decoration: none;
+}
+
+.logo {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: #6070ff;
+  margin-left: 24px;
+}
+
+.menu-icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 24px;
+  color: #6070ff;
+}
+
+.headline-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  margin-top: 30px;
+  background-image: url("../assets/backgroung.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.headline {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grettings {
+  margin-top: 100px;
+  margin-bottom: 12px;
+  width: 300px;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #172b4d;
+}
+
+.desc {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin-top: 1px;
+  margin-right: 24px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+}
+
+.social p {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7f8cff;
+  margin-top: 10px;
+}
+
+.social-links {
+  display: flex;
+  gap: 20px;
+  justify-content: flex-start;
+  padding: 0;
+  margin-top: 0px;
+}
+
+.social-links li {
+  list-style: none;
+  padding: 0;
 }
