@@ -92,7 +92,7 @@ body {
   gap: 20px;
   justify-content: flex-start;
   padding: 0;
-  margin-top: 0px;
+  margin-top: 1px;
 }
 
 .social-links li {
