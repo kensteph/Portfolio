@@ -218,20 +218,19 @@
               /></a>
             </li>
 
-
             <li>
               <a href="#">
                 <img src="./assets/medium.png" alt="Medium Img"
               /></a>
             </li>
-
           </ul>
         </div>
         <button class="resume-btn" type="button">Get my resume</button>
 
         <ul class="skills-container">
           <li class="dropdown-open">
-            <span class="dropdown-text">Languages</span> <i class="fa fa-chevron-down"></i>
+            <span class="dropdown-text">Languages</span>
+            <i class="fa fa-chevron-down"></i>
           </li>
           <ul class="dropdown-list">
             <li class="dropdown-list-item">
@@ -248,12 +247,54 @@
             </li>
           </ul>
           <li class="dropdown">
-            <span class="dropdown-text">Frameworks</span> <i class="fa fa-chevron-right"></i>
+            <span class="dropdown-text">Frameworks</span>
+            <i class="fa fa-chevron-right"></i>
           </li>
           <li class="dropdown">
-            <span class="dropdown-text">Skills</span> <i class="fa fa-chevron-right"></i>
+            <span class="dropdown-text">Skills</span>
+            <i class="fa fa-chevron-right"></i>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="contact-section">
+      <div class="contact-content">
+        <h2 class="contact-title">Contact me</h2>
+        <p class="contact-text">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+
+        <form action="/" method="post">
+          <label>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              maxlength="30"
+              required
+            />
+          </label>
+          <label>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              required
+            />
+          </label>
+          <label>
+            <textarea
+              name="message"
+              id="message"
+              maxlength="500"
+              placeholder="Write your message here"
+              required
+            ></textarea>
+          </label>
+          <button class="btn-contact" type="submit">Get in touch</button>
+        </form>
       </div>
     </section>
   </body>
