@@ -188,7 +188,7 @@ If you like this project star it!
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank the Microverse team
+I would like to thank [@dennis-every](https://github.com/dennis-every) for his contribution
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 <!-- LICENSE -->

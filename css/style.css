@@ -2,6 +2,7 @@
 
 body {
   margin: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 .toolbar {
@@ -382,4 +383,98 @@ body {
   font-size: 15px;
   line-height: 20px;
   color: #253858;
+}
+
+/* CONTACT SECTION */
+
+.contact-section {
+  display: flex;
+  flex-direction: column;
+  background: #6070ff;
+  padding: 80px 20px;
+  box-sizing: border-box;
+  border-top-left-radius: 100px;
+  background-image: url("../assets/contact-bg.png");
+  background-repeat: no-repeat;
+  background-size: 250px;
+  background-position: 150px 10px;
+}
+
+.contact-content {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-title {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  text-align: center;
+  margin: 25px;
+}
+
+.contact-text {
+  width: 327px;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+  margin-bottom: 30px;
+}
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 28px;
+}
+
+.input {
+  width: 90%;
+  max-width: 327px;
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  color: #172b4d;
+  padding: 15px 16px;
+}
+
+textarea {
+  height: 170px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn-contact {
+  width: 170px;
+  padding: 12px 16px;
+  background: #fff;
+  border: 1px solid #396df2;
+  border-radius: 10px;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  cursor: pointer;
+  text-transform: capitalize;
+  transition: all 200ms ease-in-out;
+}
+
+.btn-contact:hover {
+  color: #fff;
+  background: #6070ff;
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
+}
+
+.btn-contact:active {
+  color: #fff;
+  background: #2230d2;
+  box-shadow: none;
 }
