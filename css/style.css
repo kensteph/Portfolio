@@ -447,17 +447,16 @@ header {
 form {
   display: flex;
   flex-direction: column;
-  width: 80%;
-  gap: 20px;
 }
 
 .input {
-  width: 100%;
+  min-width: 327px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #172b4d;
   padding: 15px 16px;
+  margin-bottom: 20px;
 }
 
 textarea {
@@ -634,7 +633,7 @@ textarea {
 
   .about-content {
     flex-direction: row;
-    padding: 200px 100px;
+    padding: 100px;
     gap: 25px;
   }
 
@@ -671,21 +670,24 @@ textarea {
   .contact-container {
     align-items: center;
     background-image: url("../assets/contact-bg-desk.png");
-    background-size: 100%;
-    background-position: 100% 10px;
-    padding-bottom: 300px;
+    background-size: 60%;
+    background-position: 50% 50%;
+  }
+
+  .contact-title {
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
   }
 
   .contact-text {
-    width: 50%;
-  }
-
-  form {
-    width: 40%;
+    width: 30%;
   }
 
   .input {
-    width: 100%;
+    min-width: 447px;
+    border-radius: 2px;
   }
 
   textarea {
