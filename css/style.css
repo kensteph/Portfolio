@@ -629,4 +629,40 @@ textarea {
     letter-spacing: 0.03em;
     color: #396df2;
   }
+
+  /* ABOUT SECTION */
+
+  .about-content {
+    flex-direction: row;
+    padding: 100px;
+    gap: 25px;
+  }
+
+  .about-info {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .technologies {
+    flex: 2;
+  }
+
+  .skills-container {
+    margin-top: 0;
+  }
+
+  .dropdown-list {
+    width: 50%;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .dropdown-list-item {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .dropdown-list li:last-child span {
+    text-transform: capitalize;
+  }
 }
