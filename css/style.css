@@ -634,7 +634,7 @@ textarea {
 
   .about-content {
     flex-direction: row;
-    padding: 100px;
+    padding: 200px 100px;
     gap: 25px;
   }
 
@@ -664,5 +664,36 @@ textarea {
 
   .dropdown-list li:last-child span {
     text-transform: capitalize;
+  }
+
+  /* CONTACT SECTION */
+
+  .contact-container {
+    align-items: center;
+    background-image: url("../assets/contact-bg-desk.png");
+    background-size: 100%;
+    background-position: 100% 10px;
+    padding-bottom: 300px;
+  }
+
+  .contact-text {
+    width: 50%;
+  }
+
+  form {
+    width: 40%;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  textarea {
+    height: 170px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .btn-contact {
+    align-self: center;
   }
 }
