@@ -39,6 +39,20 @@ header {
   margin-left: 24px;
 }
 
+.logo:hover {
+  animation: grow 4s linear;
+}
+
+@keyframes grow {
+  from {
+    font-size: 18px;
+  }
+
+  to {
+    font-size: 36px;
+  }
+}
+
 .menu-icon {
   width: 30px;
   height: 30px;
@@ -245,7 +259,7 @@ header {
   letter-spacing: 0.03em;
   color: #396df2;
   cursor: pointer;
-  transition: all 200ms ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .see-project-btn:hover {
@@ -306,7 +320,7 @@ header {
   letter-spacing: 0.03em;
   color: #396df2;
   cursor: pointer;
-  transition: all 200ms ease-in-out;
+  transition: all 2s ease-in-out;
 }
 
 .resume-btn:hover {
