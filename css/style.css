@@ -1,14 +1,28 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: "Poppins", sans-serif;
+  background: #e5e5e5;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 48px;
+  width: 100%;
 }
 
 .toolbar {
   display: flex;
   justify-content: space-between;
   padding-top: 10px;
+  background: #fff;
 }
 
 .toolbar a {
@@ -49,11 +63,14 @@ body {
 .headline-container {
   display: flex;
   flex-direction: column;
+  min-height: 816px;
   height: 100vh;
-  margin-top: 30px;
-  background-image: url("../assets/backgroung.png");
+  background: #fff;
+  background-image: url("../assets/background-mobile.png");
   background-repeat: no-repeat;
   background-size: 100%;
+  background-position: 100% 10px;
+  border-bottom-left-radius: 50px;
 }
 
 .headline {
@@ -66,9 +83,7 @@ body {
 .grettings {
   margin-top: 100px;
   margin-bottom: 12px;
-  width: 300px;
   font-family: "Poppins", sans-serif;
-  font-style: normal;
   font-weight: 700;
   font-size: 40px;
   line-height: 52px;
@@ -120,13 +135,12 @@ body {
 /* WORK SECTION */
 
 .works-section {
+  width: 100%;
   display: grid;
   grid-template-columns: auto;
   gap: 90px;
-  margin-top: 0;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-bottom: 20px;
+  margin: 150px 0 50px;
+  padding: 150px 20px;
 }
 
 .card-works {
@@ -140,15 +154,13 @@ body {
 }
 
 .project-screenshot {
+  width: 100%;
   border-radius: 8px;
-  margin-left: 10px;
-  margin-right: 10px;
 }
 
 .project-desc {
   display: flex;
   flex-direction: column;
-  width: 280px;
   margin-left: 10px;
   margin-right: 10px;
 }
@@ -264,10 +276,6 @@ body {
 
 /* ABOUT SECTION */
 
-.about-section {
-  background: #f6f3f3;
-}
-
 .about-content {
   display: flex;
   flex-direction: column;
@@ -332,6 +340,7 @@ body {
   flex-direction: column;
   margin-top: 50px;
   padding: 0;
+  list-style: none;
 }
 
 .dropdown-open {
@@ -399,24 +408,33 @@ body {
   color: #253858;
 }
 
+.dropdown-list li:last-child span {
+  text-transform: uppercase;
+}
+
 /* CONTACT SECTION */
 
 .contact-section {
+  background: #fff;
+}
+
+.contact-container {
   display: flex;
   flex-direction: column;
-  background: #6070ff;
+  align-items: center;
   padding: 80px 20px;
-  box-sizing: border-box;
+  background: #6070ff;
   border-top-left-radius: 100px;
   background-image: url("../assets/contact-bg.png");
   background-repeat: no-repeat;
   background-size: 250px;
-  background-position: 150px 10px;
+  background-position: 100% 10px;
 }
 
 .contact-content {
   display: flex;
   flex-direction: column;
+  align-items: center;
   list-style: none;
   padding: 0;
   margin: 0;
@@ -437,26 +455,22 @@ body {
   line-height: 28px;
   text-align: center;
   color: #ebebff;
-  margin-bottom: 30px;
+  margin: 0 10px 30px;
 }
 
-.contact-form {
+form {
   display: flex;
   flex-direction: column;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  gap: 28px;
 }
 
 .input {
-  width: 90%;
-  max-width: 327px;
+  min-width: 327px;
   background: #fff;
   border: 1px solid #cfd8dc;
   border-radius: 8px;
   color: #172b4d;
   padding: 15px 16px;
+  margin-bottom: 20px;
 }
 
 textarea {
@@ -491,4 +505,211 @@ textarea {
   color: #fff;
   background: #2230d2;
   box-shadow: none;
+}
+
+.menu {
+  display: none;
+}
+
+/* DESKTOP VERSION */
+
+@media (min-width: 760px) {
+  /* HEADER SECTION */
+
+  .menu {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+    margin-right: 10%;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+  }
+
+  .menu-link {
+    text-decoration: none;
+    color: #344563;
+  }
+
+  .toolbar {
+    align-items: center;
+  }
+
+  .toolbar i {
+    display: none;
+  }
+
+  .headline-container {
+    flex-direction: row;
+    margin-top: 0;
+    background-image: url("../assets/background-desk.png");
+    background-size: 100%;
+    background-position: 100% 10%;
+    align-items: none;
+    padding: 15% 16%;
+    border-bottom-left-radius: 50px;
+  }
+
+  .headline {
+    margin-top: 0;
+    padding: 0 10%;
+  }
+
+  .grettings {
+    margin-top: 0;
+  }
+
+  .desc {
+    font-size: 20px;
+    line-height: 28px;
+    color: #344563;
+    width: 70%;
+  }
+
+  /* WORKS SECTION */
+
+  .works-section {
+    grid-template-columns: minmax(300px, 70%);
+    justify-content: center;
+  }
+
+  .card-works {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 25px;
+  }
+
+  .card-works:nth-child(even) .img-container {
+    order: 1;
+  }
+
+  .project-screenshot {
+    width: 100%;
+  }
+
+  .project-desc {
+    margin-top: 0;
+    width: 100%;
+  }
+
+  .project-desc h2 {
+    width: 100%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #091e42;
+  }
+
+  .s-desc {
+    align-items: baseline;
+    justify-content: baseline;
+  }
+
+  .s-desc :first-child {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .s-desc li {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #6b778c;
+  }
+
+  .desc-text {
+    margin-top: 10px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #344563;
+  }
+
+  .categories li {
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+  }
+
+  .see-project-btn {
+    font-size: 17px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #396df2;
+  }
+
+  /* ABOUT SECTION */
+
+  .about-content {
+    flex-direction: row;
+    padding: 100px;
+    gap: 25px;
+  }
+
+  .about-info {
+    flex: 1;
+    padding: 10px;
+  }
+
+  .technologies {
+    flex: 2;
+  }
+
+  .skills-container {
+    margin-top: 0;
+  }
+
+  .dropdown-list {
+    width: 50%;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .dropdown-list-item {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .dropdown-list li:last-child span {
+    text-transform: capitalize;
+  }
+
+  /* CONTACT SECTION */
+
+  .contact-container {
+    align-items: center;
+    background-image: url("../assets/contact-bg-desk.png");
+    background-size: 60%;
+    background-position: 50% 50%;
+  }
+
+  .contact-title {
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+  }
+
+  .contact-text {
+    width: 30%;
+  }
+
+  .input {
+    min-width: 447px;
+    border-radius: 2px;
+  }
+
+  textarea {
+    height: 170px;
+    font-family: "Poppins", sans-serif;
+  }
+
+  .btn-contact {
+    align-self: center;
+  }
 }

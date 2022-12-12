@@ -14,20 +14,25 @@
   <body>
     <header class="header-wrapper">
       <nav class="toolbar">
-        <a href="#" class="logo">My Logo</a>
+        <a href="#" class="logo">KR</a>
         <i class="fa fa-bars menu-icon"></i>
+        <ul class="menu">
+          <li><a class="menu-link" href="#works">Portfolio</a></li>
+          <li><a class="menu-link" href="#about">About</a></li>
+          <li><a class="menu-link" href="#contact">Contact</a></li>
+        </ul>
       </nav>
     </header>
 
     <!-- HEADLINE -->
     <section class="headline-container">
       <div class="headline">
-        <h1 class="grettings">I’m Kender Glad to see you!</h1>
+        <h1 class="grettings">I’m Kender <br />Glad to see you!</h1>
 
         <p class="desc">
           I’m a software developer! I can help you build a product , feature or
           website Look through some of my work and experience! If you like what
-          you see and have a project you need coded, don’t hestiate to contact
+          you see and have a project you need coded, don’t hesitate to contact
           me.
         </p>
 
@@ -35,30 +40,30 @@
           <p>LET’S CONNECT</p>
           <ul class="social-links">
             <li>
-              <a href="#">
-                <img src="./assets/tweeter.png" alt="Tweeter Img"
+              <a href="https://twitter.com/RomainKender" target="_blank" rel="noopener">
+                <img src="./assets/tweeter.png" alt="Twitter Img"
               /></a>
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://www.linkedin.com/in/kender-romain8788/" target="_blank" rel="noopener">
                 <img src="./assets/linkedin.png" alt="Linkedin Img"
               /></a>
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://medium.com/@kenderromain" target="_blank" rel="noopener">
                 <img src="./assets/medium.png" alt="Medium Img"
               /></a>
             </li>
 
             <li>
-              <a href="#">
+              <a href="https://github.com/kensteph" target="_blank" rel="noopener">
                 <img src="./assets/github.png" alt="Github Img"
               /></a>
             </li>
             <li>
-              <a href="#"> <img src="./assets/peace.png" alt="Peace Img" /></a>
+              <a href="https://angel.co/u/kender-romain" target="_blank" rel="noopener"> <img src="./assets/peace.png" alt="Wellfound Img" /></a>
             </li>
           </ul>
         </div>
@@ -66,14 +71,15 @@
     </section>
 
     <!-- WORKS SECTION -->
-    <section class="works-section">
+    <section class="works-section" id="works">
       <div class="card-works">
-        <img
-          class="project-screenshot"
-          src="./assets/tonic.png"
-          alt="project image"
-        />
-
+        <div class="img-container">
+          <img
+            class="project-screenshot"
+            src="./assets/tonic-nature.png"
+            alt="project image"
+          />
+        </div>
         <div class="project-desc">
           <h2>Tonic</h2>
           <ul class="s-desc">
@@ -96,13 +102,15 @@
           <button class="see-project-btn" type="button">See Project</button>
         </div>
       </div>
-      <div class="card-works">
-        <img
-          class="project-screenshot"
-          src="./assets/multi-post-stories.png"
-          alt="project image"
-        />
 
+      <div class="card-works">
+        <div class="img-container">
+          <img
+            class="project-screenshot"
+            src="./assets/multi-post-stories-2.png"
+            alt="project image"
+          />
+        </div>
         <div class="project-desc">
           <h2>Multi-Post Stories</h2>
           <ul class="s-desc">
@@ -113,11 +121,13 @@
             <li>2015</li>
           </ul>
           <p class="desc-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
+            Experimental content creation feature that allows users to add to an
+            existing story over the course of a day without spamming their
+            friends.
           </p>
           <ul class="categories">
             <li>html</li>
+            <li>Ruby on rails</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
@@ -125,28 +135,31 @@
           <button class="see-project-btn" type="button">See Project</button>
         </div>
       </div>
-      <div class="card-works">
-        <img
-          class="project-screenshot"
-          src="./assets/tonic-2.png"
-          alt="project image"
-        />
 
+      <div class="card-works">
+        <div class="img-container">
+          <img
+            class="project-screenshot"
+            src="./assets/tonic.png"
+            alt="project image"
+          />
+        </div>
         <div class="project-desc">
-          <h2>Tonic</h2>
+          <h2>Facebook 360</h2>
           <ul class="s-desc">
-            <li>CANOPY</li>
+            <li>FACEBOOK</li>
             <li><div class="bullet"></div></li>
-            <li>Bac End Dev</li>
+            <li>Full Stack Dev</li>
             <li><div class="bullet"></div></li>
             <li>2015</li>
           </ul>
           <p class="desc-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
+            Exploring the future of media in Facebook's first Virtual Reality
+            app; a place to discover and enjoy 360 photos and videos on Gear VR.
           </p>
           <ul class="categories">
             <li>html</li>
+            <li>Ruby on rails</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
@@ -154,28 +167,31 @@
           <button class="see-project-btn" type="button">See Project</button>
         </div>
       </div>
-      <div class="card-works">
-        <img
-          class="project-screenshot"
-          src="./assets/multi-post-stories-2.png"
-          alt="project image"
-        />
 
+      <div class="card-works">
+        <div class="img-container">
+          <img
+            class="project-screenshot"
+            src="./assets/multi-post-stories.png"
+            alt="project image"
+          />
+        </div>
         <div class="project-desc">
-          <h2>Multi-Post Stories</h2>
+          <h2>Uber Navigation</h2>
           <ul class="s-desc">
-            <li>CANOPY</li>
+            <li>Uber</li>
             <li><div class="bullet"></div></li>
-            <li>Bac End Dev</li>
+            <li>Lead Developer</li>
             <li><div class="bullet"></div></li>
             <li>2015</li>
           </ul>
           <p class="desc-text">
-            A daily selection of privately personalized reads; no accounts or
-            sign-ups required.
+            A smart assistant to make driving more safe, efficient, and fun by
+            unlocking your most expensive computer: your car.
           </p>
           <ul class="categories">
             <li>html</li>
+            <li>Ruby on rails</li>
             <li>css</li>
             <li>javascript</li>
           </ul>
@@ -186,137 +202,132 @@
     </section>
 
     <!-- ABOUT SECTION -->
-    <section class="about-section">
+    <section class="about-section" id="about">
       <div class="about-content">
-        <h2 class="about-title">About Myself</h2>
+        <div class="about-info">
+          <h2 class="about-title">About Myself</h2>
+          <p class="about-text">
+            Hello I’m a software developer! I can help you build a product ,
+            feature or website Look through some of my work and experience! If
+            you like what you see and have a project you need coded, don’t
+            hesitate to contact me.
+          </p>
+          <div class="social">
+            <p>LET’S CONNECT</p>
+            <ul class="social-links">
+              <li>
+                <a href="https://twitter.com/RomainKender" target="_blank" rel="noopener">
+                  <img src="./assets/tweeter.png" alt="Twitter Img"
+                /></a>
+              </li>
+  
+              <li>
+                <a href="https://www.linkedin.com/in/kender-romain8788/" target="_blank" rel="noopener">
+                  <img src="./assets/linkedin.png" alt="Linkedin Img"
+                /></a>
+              </li>
+  
+              <li>
+                <a href="https://medium.com/@kenderromain" target="_blank" rel="noopener">
+                  <img src="./assets/medium.png" alt="Medium Img"
+                /></a>
+              </li>
+  
+              <li>
+                <a href="https://github.com/kensteph" target="_blank" rel="noopener">
+                  <img src="./assets/github.png" alt="Github Img"
+                /></a>
+              </li>
+              <li>
+                <a href="https://angel.co/u/kender-romain" target="_blank" rel="noopener"> <img src="./assets/peace.png" alt="Wellfound Img" /></a>
+              </li>
+            </ul>
+          </div>
+          <button class="resume-btn" type="button">Get my resume</button>
+        </div>
+        <div class="technologies">
+          <ul class="skills-container">
+            <li class="dropdown-open">
+              <span class="dropdown-text">Languages</span>
+              <i class="fa fa-chevron-down"></i>
+            </li>
+            <li>
+              <ul class="dropdown-list">
+                <li class="dropdown-list-item">
+                  <img src="./assets/js.png" alt="JS image" />
+                  <span>JavaScript</span>
+                </li>
+                <li class="dropdown-list-item">
+                  <img src="./assets/html.png" alt="JS image" />
+                  <span>HTML</span>
+                </li>
+                <li class="dropdown-list-item">
+                  <img src="./assets/css.png" alt="JS image" />
+                  <span>css</span>
+                </li>
+              </ul>
+            </li>
 
-        <p class="about-text">
-          Hello I’m a software developer! I can help you build a product ,
-          feature or website Look through some of my work and experience! If you
-          like what you see and have a project you need coded, don’t hestiate to
-          contact me.
-        </p>
-        <div class="social">
-          <p>LET’S CONNECT</p>
-          <ul class="social-links">
-            <li>
-              <a href="#">
-                <img src="./assets/github.png" alt="Github Img"
-              /></a>
+            <li class="dropdown">
+              <span class="dropdown-text">Frameworks</span>
+              <i class="fa fa-chevron-right"></i>
             </li>
-            <li>
-              <a href="#">
-                <img src="./assets/linkedin.png" alt="Linkedin Img"
-              /></a>
-            </li>
-            <li>
-              <a href="#"> <img src="./assets/peace.png" alt="Peace Img" /></a>
-            </li>
-            <li>
-              <a href="#">
-                <img src="./assets/tweeter.png" alt="Tweeter Img"
-              /></a>
-            </li>
-
-            <li>
-              <a href="#">
-                <img src="./assets/medium.png" alt="Medium Img"
-              /></a>
+            <li class="dropdown">
+              <span class="dropdown-text">Skills</span>
+              <i class="fa fa-chevron-right"></i>
             </li>
           </ul>
         </div>
-        <button class="resume-btn" type="button">Get my resume</button>
-
-        <ul class="skills-container">
-          <li class="dropdown-open">
-            <span class="dropdown-text">Languages</span>
-            <i class="fa fa-chevron-down"></i>
-          </li>
-          <ul class="dropdown-list">
-            <li class="dropdown-list-item">
-              <img src="./assets/js.png" alt="JS image" />
-              <span>JavaScript</span>
-            </li>
-            <li class="dropdown-list-item">
-              <img src="./assets/html.png" alt="JS image" />
-              <span>HTML</span>
-            </li>
-            <li class="dropdown-list-item">
-              <img src="./assets/css.png" alt="JS image" />
-              <span>CSS</span>
-            </li>
-          </ul>
-          <li class="dropdown">
-            <span class="dropdown-text">Frameworks</span>
-            <i class="fa fa-chevron-right"></i>
-          </li>
-          <li class="dropdown">
-            <span class="dropdown-text">Skills</span>
-            <i class="fa fa-chevron-right"></i>
-          </li>
-        </ul>
       </div>
     </section>
 
     <!-- CONTACT SECTION -->
-    <section class="contact-section">
-      <ul class="contact-content">
-        <li><h2 class="contact-title">Contact me</h2></li>
-        <li>
-          <p class="contact-text">
-            If you have an application you are interested in developing, a
-            feature that you need built or a project that needs coding. I’d love
-            to help with it
-          </p>
-        </li>
-
-        <li>
+    <section class="contact-section" id="contact">
+      <div class="contact-container">
+        <h2 class="contact-title">Contact me</h2>
+        <p class="contact-text">
+          If you have an application you are interested in developing, a feature
+          that you need built or a project that needs coding. I’d love to help
+          with it
+        </p>
+        <div class="form-container">
           <form action="https://formspree.io/f/xvoyekjg" method="post">
-            <ul class="contact-form">
-              <li>
-                <label>
-                  <input
-                    class="input"
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder="Enter your name"
-                    maxlength="30"
-                    required
-                  />
-                </label>
-              </li>
-              <li>
-                <label>
-                  <input
-                    class="input"
-                    type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter your email"
-                    required
-                  />
-                </label>
-              </li>
-              <li>
-                <label>
-                  <textarea
-                    class="input"
-                    name="message"
-                    id="message"
-                    maxlength="500"
-                    placeholder="Write your message here"
-                    required
-                  ></textarea>
-                </label>
-              </li>
-              <li>
-                <button class="btn-contact" type="submit">Get in touch</button>
-              </li>
-            </ul>
+            <label>
+              <input
+                class="input"
+                type="text"
+                id="name"
+                name="name"
+                placeholder="Enter your name"
+                maxlength="30"
+                required
+              />
+            </label>
+            <label>
+              <input
+                class="input"
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Enter your email"
+                required
+              />
+            </label>
+            <label>
+              <textarea
+                class="input"
+                name="message"
+                id="message"
+                maxlength="500"
+                placeholder="Write your message here"
+                required
+              ></textarea>
+            </label>
+            <button class="btn-contact" type="submit">Get in touch</button>
           </form>
-        </li>
-      </ul>
+        </div>
+      
+      </div>
     </section>
   </body>
 </html>
