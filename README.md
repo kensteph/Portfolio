@@ -7,6 +7,7 @@
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
   - [🚀 Live Demo](#live-demo)
+  - [💻 Portfolio Presentation](#portfolio-presentation)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -64,6 +65,16 @@
 > Here you can visit my live demo :
 
 - [Kender Romain's Portfolio](https://kensteph.github.io/Portfolio/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LIVE DEMO -->
+
+## 💻 Portfolio Presentation <a name="portfolio-presentation"></a>
+
+> Here you can see my presentation :
+
+- [Portfolio presentation on LOOM](https://loom.com/share/78fedd8d58604da69d5fe15a4a3a9780)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
