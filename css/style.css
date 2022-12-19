@@ -727,6 +727,7 @@ textarea {
   backdrop-filter: blur(5px);
   mix-blend-mode: multiply;
   z-index: 1;
+  display: none;
 }
 
 .close-button {
