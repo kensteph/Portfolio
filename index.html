@@ -15,7 +15,7 @@
     <header class="header-wrapper">
       <nav class="toolbar">
         <a href="#" class="logo">KR</a>
-        <i class="fa fa-bars menu-icon"></i>
+        <i class="fa fa-bars menu-icon" id="hamburger"></i>
         <ul class="menu">
           <li><a class="menu-link" href="#works">Portfolio</a></li>
           <li><a class="menu-link" href="#about">About</a></li>
@@ -329,5 +329,22 @@
       
       </div>
     </section>
+    <!--Mobile menu modal-->
+    <div class="menu-modal" id="modal">
+      <div class="modal-content">
+        <div class="close-button">
+          <img id="close-btn" src="./assets/close-btn.png" alt="Close button icon">          
+        </div>
+        <ul class="menu-mobile-links">
+          <li><a  href="#works">Portfolio</a></li>
+          <li><a  href="#about">About</a></li>
+          <li><a  href="#contact">Contact</a></li>
+        </ul>        
+        
+      </div>
+
+    </div>
+
+    <script src="./js/menu.js"></script>
   </body>
 </html>
