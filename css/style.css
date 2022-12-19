@@ -713,3 +713,40 @@ textarea {
     align-self: center;
   }
 }
+
+/* Mobile Menu Modal */
+
+.menu-modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  background: #6070ff;
+  opacity: 0.9;
+  backdrop-filter: blur(5px);
+  mix-blend-mode: multiply;
+  z-index: 1;
+}
+
+.close-button {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px;
+}
+
+.menu-mobile-links {
+  display: flex;
+  flex-direction: column;
+  margin-top: 0;
+  padding-top: 0;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu-mobile-links li a {
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+  text-decoration: none;
+}
