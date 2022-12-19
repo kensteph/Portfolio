@@ -1,18 +1,33 @@
-let btn = document.querySelector('#close-btn');
+//  Target the hamburger menu icon
+const hamburger = document.querySelector('#hamburger');
+//  Target the close button
+const btn = document.querySelector('#close-btn');
+//  Target the modal menu
+const modal = document.querySelector('#modal');
+//  The where the user can click and dismiss the modal
+const dismissArea = document.querySelector('.modal-content');
 
-let modal=document.querySelector('#modal');
-
+//  Function to hide the modal
 function hide() {
-    modal.style.display='none';
+  modal.style.display = 'none';
 }
-
+//  Function to show the modal
 function display() {
-    modal.style.display='block';
+  modal.style.display = 'block';
 }
 
-btn.addEventListener('click',hide);
+// Add event on the buttons
+btn.addEventListener('click', hide);
+hamburger.addEventListener('click', display);
 
-let hamburger = document.querySelector('#hamburger');
+// If the user click outside the content
+window.onclick = (event) => {
+  if (event.target === modal || event.target === dismissArea) hide();
+};
 
-hamburger.addEventListener('click',display);
-
+//  Get all the menu mobile links
+const menuLinks = document.querySelectorAll('ul.menu-mobile-links li');
+const lis = Object.values(menuLinks);
+for (let i = 0; i < lis.length; i += 1) {
+  lis[i].addEventListener('click', hide);
+}
