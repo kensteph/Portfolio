@@ -10,13 +10,13 @@ const body = document.querySelector('body');
 
 //  Function to hide the modal
 function hide() {
-  //Enable body scrolling
+  // Enable body scrolling
   body.classList.toggle('stop-scrolling');
   modal.style.display = 'none';
 }
 //  Function to show the modal
 function display() {
-  //Disable body scrolling
+  // Disable body scrolling
   body.classList.toggle('stop-scrolling');
   modal.style.display = 'block';
 }

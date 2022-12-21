@@ -737,6 +737,7 @@ textarea {
     align-items: center;
     margin-top: 0 !important;
   }
+
   .screenshot {
     width: 100% !important;
     height: 70% !important;
@@ -748,12 +749,12 @@ textarea {
     gap: 2%;
   }
 
-  
   .popup-text-desc {
     width: 70%;
     font-weight: 400;
     font-size: 17px;
     line-height: 24px;
+
     /* color: #344563;
     margin-bottom: 1%; */
   }
@@ -765,6 +766,7 @@ textarea {
   .categories {
     font-size: 10px !important;
   }
+
   .links-popup {
     justify-content: flex-start !important;
   }
@@ -850,10 +852,6 @@ textarea {
 /* Hide scrollbar for Chrome, Safari and Opera */
 .details-content::-webkit-scrollbar {
   display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.details-content {
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -912,10 +910,6 @@ textarea {
   padding-top: 5%;
 }
 
-.links-popup a {
-  text-decoration: none;
-}
-
 .btn-popup {
   display: flex;
   width: 70%;
@@ -936,6 +930,7 @@ textarea {
   color: #396df2;
   cursor: pointer;
   transition: all 2s ease-in-out;
+  text-decoration: none;
 }
 
 .btn-popup:hover {
