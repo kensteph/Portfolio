@@ -175,6 +175,20 @@ Example:
 - Twitter: [@RomainKender](https://twitter.com/RomainKender)
 - LinkedIn: [kender-romain8788](https://www.linkedin.com/in/kender-romain8788/)
 
+## 👥 Collaborators <a name="collaborators"></a>
+👤 **Dennis Every**
+
+- GitHub: [@dennis-every](https://github.com/dennis-every)
+- Twitter: [@dennis_every](https://twitter.com/dennis_every)
+- LinkedIn: [dennis-every](https://linkedin.com/in/dennis-every)
+
+
+👤 **Edahi Antonio Gutiérrez Reyes**
+
+- GitHub: [@edahigure](https://github.com/edahigure)
+- Twitter: [@edahigure](https://twitter.com/edahigure)
+- LinkedIn: [edahigure](https://linkedin.com/in/edahigure)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
