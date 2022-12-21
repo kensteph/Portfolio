@@ -949,10 +949,12 @@ textarea {
 
 /* Validation */
 #error-msg {
+  align-self: center;
+  width: 350px;
   margin-top: 10px;
-  color: red;
-  font-weight: 400;
-  font-size: 15px;
+  color: #ce0808;
+  font-weight: 800;
+  font-size: 18px;
   line-height: 24px;
   text-align: center;
 }
