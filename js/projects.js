@@ -146,3 +146,41 @@ const projects = [
     // Add the card
     workSection.appendChild(divCard);
   });
+
+  // Traget the elements
+const seeProjectBtns = document.querySelectorAll(".see-project-btn");
+const popUp = document.querySelector("#details-modal");
+const closePopUp = document.querySelector("#close-popup");
+
+//POPUP ELEMENTS
+const projectName = document.querySelector("#project-name");
+let projectUlTags = document.querySelector("#popup-ul-tags");
+let projectUlTechs = document.querySelector("#popup-ul-techs");
+const projectScreenshot = document.querySelector("#popup-screenshot");
+const projectDesc = document.querySelector("#popup-desc");
+const projectLive = document.querySelector("#see-live");
+const projectSource = document.querySelector("#project-source");
+
+// Functions
+const displayPopUp = (projectId) => {
+  let project = projects[projectId];
+  projectName.textContent = project.name;
+  projectScreenshot.src = project.image;
+  projectLive.href = project.link_live;
+  projectSource.href = project.link_source;
+  projectUlTags.innerHTML='';
+  projectUlTags = createLiChildren(projectUlTags, project,"tag");
+  projectUlTechs.innerHTML='';
+  projectUlTechs = createLiChildren(projectUlTechs, project,"tech");
+  popUp.style.display = "flex";
+};
+
+const hidePopUp = () => {
+  popUp.style.display = "none";
+};
+
+//  Add event on the button
+seeProjectBtns.forEach((seeProjectBtn) => {
+  seeProjectBtn.addEventListener("click", () => displayPopUp(seeProjectBtn.id));
+});
+closePopUp.addEventListener("click", hidePopUp);
