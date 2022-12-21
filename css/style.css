@@ -946,3 +946,19 @@ textarea {
   width: 25px;
   height: 25px;
 }
+
+/* Validation */
+#error-msg {
+  align-self: center;
+  width: 350px;
+  margin-top: 10px;
+  color: #ce0808;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 24px;
+  text-align: center;
+}
+
+label {
+  display: none;
+}
