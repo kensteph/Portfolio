@@ -714,6 +714,54 @@ textarea {
   .btn-contact {
     align-self: center;
   }
+
+  /* POPUP WINDOW DETAILS */
+
+  .popup-details {
+    padding: 1% !important;
+  }
+  .details-content {
+    width: 60%;
+    height: 95vh;
+    padding: 1% 1%;
+  }
+
+  .popup-img-container {
+    align-items: center;
+    margin-top: 0 !important;
+  }
+  .screenshot {
+    width: 100% !important;
+    height: 70% !important;
+  }
+
+  .popup-desc {
+    display: flex;
+    margin-top: 0 !important;
+    gap: 2%;
+  }
+
+  .popup-text-desc {
+    flex: 2;
+  }
+
+  .popup-footer {
+    flex: 1;
+  }
+
+  .categories {
+    font-size: 10px !important;
+  }
+  .links-popup {
+    justify-content: flex-start !important;
+  }
+
+  .btn-popup {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 5px;
+    width: 70%;
+  }
 }
 
 /* Mobile Menu Modal */
@@ -856,6 +904,7 @@ textarea {
 
 .btn-popup {
   display: flex;
+  width: 70%;
   justify-content: center;
   align-items: center;
   gap: 2%;
