@@ -173,10 +173,14 @@ const displayPopUp = (projectId) => {
   projectUlTechs.innerHTML='';
   projectUlTechs = createLiChildren(projectUlTechs, project,"tech");
   popUp.style.display = "flex";
+  //Disable body scrolling
+  body.classList.toggle('stop-scrolling');
 };
 
 const hidePopUp = () => {
   popUp.style.display = "none";
+  //Enable body scrolling
+  body.classList.toggle('stop-scrolling');
 };
 
 //  Add event on the button

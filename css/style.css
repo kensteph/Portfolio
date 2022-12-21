@@ -10,6 +10,12 @@ body {
   background: #e5e5e5;
 }
 
+/* Fix scrolling when modal appears */
+.stop-scrolling {
+  height: 100%;
+  overflow: hidden;
+}
+
 header {
   position: fixed;
   top: 0;
@@ -720,10 +726,11 @@ textarea {
   .popup-details {
     padding: 1% !important;
   }
+
   .details-content {
-    width: 60%;
+    width: 50%;
     height: 95vh;
-    padding: 1% 1%;
+    padding: 2% 1% !important;
   }
 
   .popup-img-container {
@@ -741,12 +748,18 @@ textarea {
     gap: 2%;
   }
 
+  
   .popup-text-desc {
-    flex: 2;
+    width: 70%;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 24px;
+    /* color: #344563;
+    margin-bottom: 1%; */
   }
 
   .popup-footer {
-    flex: 1;
+    width: 30%;
   }
 
   .categories {
@@ -757,10 +770,10 @@ textarea {
   }
 
   .btn-popup {
-    font-size: 10px;
-    line-height: 10px;
-    padding: 5px;
-    width: 70%;
+    font-size: 12px !important;
+    line-height: 10px !important;
+    padding: 5px !important;
+    width: 80% !important;
   }
 }
 
@@ -856,6 +869,7 @@ textarea {
   width: 25px;
   height: 25px;
   margin-right: 4%;
+  cursor: pointer;
 }
 
 #popup-ul-tags {

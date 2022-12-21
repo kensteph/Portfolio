@@ -6,13 +6,18 @@ const btn = document.querySelector('#close-btn');
 const modal = document.querySelector('#modal');
 //  The where the user can click and dismiss the modal
 const dismissArea = document.querySelector('.modal-content');
+const body = document.querySelector('body');
 
 //  Function to hide the modal
 function hide() {
+  //Enable body scrolling
+  body.classList.toggle('stop-scrolling');
   modal.style.display = 'none';
 }
 //  Function to show the modal
 function display() {
+  //Disable body scrolling
+  body.classList.toggle('stop-scrolling');
   modal.style.display = 'block';
 }
 
