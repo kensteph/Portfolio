@@ -9,6 +9,7 @@ const projects = [
     tags: ['CANOPY', 'Bac End Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
     link_source: 'https://github.com/kensteph/Portfolio',
+    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     name: 'Multi-Post Stories',
@@ -19,6 +20,7 @@ const projects = [
     tags: ['CANOPY', 'Bac End Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
     link_source: 'https://github.com/kensteph/Portfolio',
+    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     name: 'Facebook 360',
@@ -29,6 +31,7 @@ const projects = [
     tags: ['FACEBOOK', 'Full Stack Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
     link_source: 'https://github.com/kensteph/Portfolio',
+    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     name: 'Uber Navigation',
@@ -39,6 +42,7 @@ const projects = [
     tags: ['Uber', 'Lead Developer', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
     link_source: 'https://github.com/kensteph/Portfolio',
+    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
 ];
 
@@ -74,10 +78,8 @@ const createLiChildren = (ul, project, section) => {
   //  Get the works section
 const workSection = document.querySelector('#works');
 
-//  Dynamicly create the cards
+//  Dynamically create the cards
 projects.forEach((project, projectPos) => {
-  // console.log(project);
-
   // Create a new div
   const divCard = document.createElement('div');
   // Add class
@@ -150,23 +152,68 @@ projects.forEach((project, projectPos) => {
 // Traget the elements
 const seeProjectBtns = document.querySelectorAll('.see-project-btn');
 const popUp = document.querySelector('#details-modal');
-const closePopUp = document.querySelector('#close-popup');
+
+// Functions
+const hidePopUp = () => {
+  popUp.style.display = 'none';
+  // Enable body scrolling
+  const body = document.querySelector('body');
+  body.classList.toggle('stop-scrolling');
+};
+
+// ADD the content for popup window
+const popUpContent = `<div class="details-content">
+    <div class="popup-header">
+      <h2 id="project-name"></h2>
+      <img
+        id="close-popup"
+        src="./assets/close-popup.png"
+        alt="Close pupup button icon"
+      />
+    </div>
+    
+    <ul class="s-desc" id="popup-ul-tags">
+    </ul>
+    
+      <img
+        id="popup-screenshot"
+        class="screenshot"
+        alt="project image"
+      />
+    <div class="popup-desc">
+      <p class="popup-text-desc" id="popup-desc"></p>
+      <div class="popup-footer">
+        <ul class="categories fs"  id="popup-ul-techs">
+        </ul>
+        <hr class="line">
+        <div class="links-popup">
+          <a class="btn-popup" href="#" target="_blank" rel="noopenner" id="see-live">See Live <img class="btn-icon" src="./assets/see-live.png" alt="Github blue icon" ></a>
+          <a class="btn-popup" href="#" target="_blank" rel="noopenner" id="project-source">See Source <img class="btn-icon" src="./assets/github-blue.png" alt="See Live blue icon" ></a>
+        </div>
+      </div>
+    </div>
+  </div>`;
+
+popUp.innerHTML = popUpContent;
 
 // POPUP ELEMENTS
 const projectName = document.querySelector('#project-name');
 let projectUlTags = document.querySelector('#popup-ul-tags');
 let projectUlTechs = document.querySelector('#popup-ul-techs');
+const projectDescription = document.querySelector('#popup-desc');
 const projectScreenshot = document.querySelector('#popup-screenshot');
 const projectLive = document.querySelector('#see-live');
 const projectSource = document.querySelector('#project-source');
+const closePopUp = document.querySelector('#close-popup');
+closePopUp.addEventListener('click', hidePopUp);
 
-// Functions
 const displayPopUp = (projectId) => {
   const project = projects[projectId];
   projectName.textContent = project.name;
   projectScreenshot.src = project.image;
   projectLive.href = project.link_live;
   projectSource.href = project.link_source;
+  projectDescription.textContent = project.long_description;
   projectUlTags.innerHTML = '';
   projectUlTags = createLiChildren(projectUlTags, project, 'tag');
   projectUlTechs.innerHTML = '';
@@ -177,15 +224,7 @@ const displayPopUp = (projectId) => {
   body.classList.toggle('stop-scrolling');
 };
 
-const hidePopUp = () => {
-  popUp.style.display = 'none';
-  // Enable body scrolling
-  const body = document.querySelector('body');
-  body.classList.toggle('stop-scrolling');
-};
-
 //  Add event on the button
 seeProjectBtns.forEach((seeProjectBtn) => {
   seeProjectBtn.addEventListener('click', () => displayPopUp(seeProjectBtn.id));
 });
-closePopUp.addEventListener('click', hidePopUp);
