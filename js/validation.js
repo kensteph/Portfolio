@@ -15,6 +15,6 @@ contactForm.addEventListener('submit', (e) => {
     // Reset the form
     contactForm.reset();
   } else {
-    errorMessage.innerHTML = 'Please, enter your email in lower case ( For example : stephanie@gmail.com)';
+    errorMessage.innerHTML = 'Please, enter your email in lower case. ( For example : stephanie@gmail.com)';
   }
 });

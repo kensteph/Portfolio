@@ -220,6 +220,6 @@ I would like to thank [@dennis-every](https://github.com/dennis-every) for his c
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [licensed](./LICENCE) .
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
