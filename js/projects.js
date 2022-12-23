@@ -4,7 +4,7 @@ const projects = [
     name: 'Tonic',
     description:
         ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: './assets/tonic-nature.png',
+    image: './assets/project-1.png',
     technologies: ['html', 'css', 'javascript'],
     tags: ['CANOPY', 'Bac End Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
@@ -15,7 +15,7 @@ const projects = [
     name: 'Multi-Post Stories',
     description:
         ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
-    image: './assets/multi-post-stories-2.png',
+    image: './assets/project-2.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     tags: ['CANOPY', 'Bac End Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
@@ -26,7 +26,7 @@ const projects = [
     name: 'Facebook 360',
     description:
         "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
-    image: './assets/tonic.png',
+    image: './assets/project-3.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     tags: ['FACEBOOK', 'Full Stack Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
@@ -37,7 +37,7 @@ const projects = [
     name: 'Uber Navigation',
     description:
         'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    image: './assets/multi-post-stories.png',
+    image: './assets/project-4.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     tags: ['Uber', 'Lead Developer', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
