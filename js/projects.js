@@ -1,48 +1,52 @@
 //  Array storing all the projects
 const projects = [
   {
-    name: 'Tonic',
+    name: 'To DO List',
     description:
-        ' A daily selection of privately personalized reads; no accounts or sign-ups required.',
-    image: './assets/project-1.png',
-    technologies: ['html', 'css', 'javascript'],
-    tags: ['CANOPY', 'Bac End Dev', '2015'],
-    link_live: 'https://kensteph.github.io/Portfolio/',
-    link_source: 'https://github.com/kensteph/Portfolio',
-    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+      ' A to-do list app that allows users to create and manage a list of tasks or items that need to be completed.',
+    image: './assets/TODO-LIST.png',
+    technologies: ['html', 'css', 'javascript', 'Webpack'],
+    tags: ['WEBPRO', 'Front End Dev', '2023'],
+    link_live: 'https://kensteph.github.io/to-do-list/dist/',
+    link_source: 'https://github.com/kensteph/to-do-list',
+    long_description:
+      'A to-do list app that allows users to create and manage a list of tasks or items that need to be completed. These apps typically have features such as the ability to add and remove items, mark items as complete, and save them in the browser. I use HTML, CSS, JavaScript, and Webpack.',
   },
   {
     name: 'Multi-Post Stories',
     description:
-        ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
+      ' Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.',
     image: './assets/project-2.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     tags: ['CANOPY', 'Bac End Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
     link_source: 'https://github.com/kensteph/Portfolio',
-    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    long_description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     name: 'Facebook 360',
     description:
-        "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
+      "Exploring the future of media in Facebook's first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.",
     image: './assets/project-3.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     tags: ['FACEBOOK', 'Full Stack Dev', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
     link_source: 'https://github.com/kensteph/Portfolio',
-    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    long_description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
   {
     name: 'Uber Navigation',
     description:
-        'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+      'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
     image: './assets/project-4.png',
     technologies: ['html', 'Ruby on rails', 'css', 'javascript'],
     tags: ['Uber', 'Lead Developer', '2015'],
     link_live: 'https://kensteph.github.io/Portfolio/',
     link_source: 'https://github.com/kensteph/Portfolio',
-    long_description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
+    long_description:
+      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent",
   },
 ];
 
@@ -75,7 +79,7 @@ const createLiChildren = (ul, project, section) => {
 
   return ul;
 };
-  //  Get the works section
+//  Get the works section
 const workSection = document.querySelector('#works');
 
 //  Dynamically create the cards
